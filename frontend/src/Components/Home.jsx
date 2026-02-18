@@ -10,7 +10,7 @@ function Home() {
 
     const getPasswords = async () => {
         try {
-            const req = await fetch("http://localhost:3000/");
+            const req = await fetch("https://password-manager-9xn0.onrender.com/");
             const passwords = await req.json();
             setPassArray(passwords);
         } catch (error) {
@@ -39,7 +39,7 @@ function Home() {
         try {
             const method = editId ? "PUT" : "POST";
 
-            await fetch("http://localhost:3000/", {
+            await fetch("https://password-manager-9xn0.onrender.com/", {
                 method: method,
                 headers: {
                     "Content-Type": "application/json",
@@ -71,7 +71,7 @@ function Home() {
 
     const handleDelete = async (id) => {
         try {
-            await fetch("http://localhost:3000/", {
+            await fetch("https://password-manager-9xn0.onrender.com/", {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
