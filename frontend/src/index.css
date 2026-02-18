@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.navUL{
+    @apply flex justify-around items-center
+}
+

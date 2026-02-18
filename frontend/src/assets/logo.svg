@@ -1,0 +1,35 @@
+<svg width="300" height="320" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e90ff"></stop>
+      <stop offset="100%" stop-color="#0a2540"></stop>
+    </linearGradient>
+  </defs>
+
+  <path d="M150 10 
+           L270 60 
+           L240 200 
+           Q150 300 60 200 
+           L30 60 Z" fill="url(#grad)" stroke="#111" stroke-width="6"></path>
+
+  <!-- Lock -->
+  <rect x="130" y="140" width="40" height="40" rx="6" fill="white"></rect>
+  <path d="M135 140 v-15 a15 15 0 0 1 30 0 v15" stroke="white" stroke-width="6" fill="none"></path>
+
+  <!-- User silhouette -->
+  <circle cx="150" cy="95" r="20" fill="white"></circle>
+  <path d="M115 130 q35 -35 70 0 v20 h-70z" fill="white"></path>
+
+  <!-- Radar circle -->
+  <circle cx="210" cy="110" r="18" stroke="white" stroke-width="3" fill="none"></circle>
+  <circle cx="210" cy="110" r="8" stroke="white" stroke-width="2" fill="none"></circle>
+
+  <!-- Text -->
+  <text x="150" y="285" font-size="26" font-weight="bold" fill="#111" text-anchor="middle">
+    SECURITY
+  </text>
+  <text x="150" y="310" font-size="20" fill="#1e90ff" text-anchor="middle">
+    MANAGER
+  </text>
+</svg>
