@@ -10,7 +10,11 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.use(cors({
+<<<<<<< HEAD
   origin: "https://password-manager-coral.vercel.app/",
+=======
+  origin: "https://password-manager-coral.vercel.app",
+>>>>>>> ba061dc0dfd3ca90d4cb3fd7e665d4d679d8c2ec
   methods: ["GET","POST","PUT","DELETE"]
 }));
 
