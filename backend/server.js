@@ -10,13 +10,10 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.use(cors({
-<<<<<<< HEAD
-  origin: "https://password-manager-coral.vercel.app/",
-=======
   origin: "https://password-manager-coral.vercel.app",
->>>>>>> ba061dc0dfd3ca90d4cb3fd7e665d4d679d8c2ec
   methods: ["GET","POST","PUT","DELETE"]
 }));
+
 
 // connect DB
 connectDb();
@@ -65,7 +62,7 @@ app.get("/", async (req, res) => {
     try {
         const data = await FortressKey.deleteOne({ id: req.body.id });
 
-        if(result.deletedCount === 0){
+        if(data.deletedCount === 0){
             return res.status(404).json({message: "Entry not found"});
         }
         if(!data){
